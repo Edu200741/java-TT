@@ -2,25 +2,14 @@ package org.example;
 
 import java.util.Scanner;
 
-import static org.example.Modulo.calculadora;
+
 
 
 public class Main {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         Scanner teclado2 = new Scanner(System.in);
-/*
-// calculadora
-        System.out.println("ingresa un numero: ");
-        int a = teclado.nextInt();
-        System.out.println("ingrese otro numero: ");
-        int b = teclado.nextInt();
-        System.out.println("elija el operador: + , - , * , / .");
-        String operador = teclado.next();
-        System.out.println("el resultado es: " + calculadora(operador,a,b));
-        System.out.println("");
 
-*/
 
 
 /*
@@ -68,7 +57,7 @@ public class Main {
 
 
        /* Ejercico 3: Crea un programa que solicite al usuario ingresar una contraseña. El programa debe validar la contraseña
-        según el criterio de una longitud mínima caracteres. Ingrese nuevamente la contraseña y corroborar que ambas sean iguales.*/
+        según el criterio de una longitud mínima caracteres. Ingrese nuevamente la contraseña y corroborar que ambas sean iguales.
 
         System.out.println("ingrese una contrasenia. debe tener almenos 8 caracteres");
         String contrasenia = teclado.next();
@@ -86,10 +75,56 @@ public class Main {
             confContrasenia = teclado2.next();
         }
 
-        System.out.println("contrasenia correcta"); 
+        System.out.println("contrasenia correcta"); */
 
-
-
+       
+       /*Ejercicio 4: Ordenar Tres Números
+        Escribe un programa que solicite al usuario ingresar tres números.
+        El programa debe utilizar sentencias **`if-else`** para determinar y mostrar los números en orden ascendente.
+       
+       int menor=0,medio=0,mayor=0,num1,num2,num3;
+       
+        System.out.println("por favor ingrese el primer numero");
+        num1 = teclado.nextInt();
+        System.out.println("por favor ingrese el segundo numero");
+        num2 =  teclado.nextInt();
+        System.out.println("por favor ingrese el tercer numero");
+        num3 = teclado.nextInt();
+        
+        if (num1 <= num2 && num1<=num3){
+            menor=num1;
+        }
+        if(num2<=num3){
+            medio = num2;
+            mayor = num3;
+        }else {
+            medio = num3;
+            mayor = num2;
+        }
+        if (num2 <= num1 && num2<=num3){
+            menor = num2 ;
+        }
+        if (num1 <=  num3){
+            medio = num1;
+            mayor = num3;
+        }else {
+            medio = num3;
+            mayor = num1;
+        }
+        if (num3 <= num2 && num3 <= num1){
+            menor = num3;
+        }
+        if (num1<=num2){
+            medio= num1;
+            mayor = num2;
+        }else {
+            medio = num2;
+            mayor = num3;
+        }
+                
+        System.out.println("los numeros en orden ascendentes son : "+ menor + "-"+ medio + "-"+ mayor); */
+        
+        
 
     }
 }
